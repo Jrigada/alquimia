@@ -1,0 +1,8 @@
+<.header>
+  Edit Listing <%= @listing.id %>
+  <:subtitle>Use this form to manage listing records in your database.</:subtitle>
+</.header>
+
+<.listing_form changeset={@changeset} action={~p"/listings/#{@listing}"} />
+
+<.back navigate={~p"/listings"}>Back to listings</.back>
